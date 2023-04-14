@@ -1,0 +1,62 @@
+/* Set font family, background color for body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Define container with flex properties */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap elements to new line when no space */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Set margin for chart containers */
+.chart-container {
+  margin: 20px;
+}
+
+/* Set table properties */
+table {
+  border-collapse: collapse; /* Collapse table borders */
+  margin-top: 20px;
+  width: 100%; /* Table takes full width of parent */
+}
+
+/* Set border and padding for table cells */
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Set background color and text color for table header cells */
+th {
+  background-color: #333;
+  color: white;
+}
+
+/* Define left and right table containers with width and margin */
+.table-container-left,
+.table-container-right {
+  display: inline-block;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+/* Set margin for table in left container */
+.table-container-left table {
+  margin-right: 20px;
+}
+
+/* Set margin for table in right container */
+.table-container-right table {
+  margin-left: 20px;
+}
+
+/* Remove right margin for last table container in a row */
+.table-container-left:last-child,
+.table-container-right:last-child {
+  margin-right: 0;
+}

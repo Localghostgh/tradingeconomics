@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Balance of Trade</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>2022 Balance of Trade for Mexico and Thailand</h1>
+    {{ chart|safe }}
+
+    <div class="container">
+        <div class="table-container">
+            <h2>Mexico</h2>
+            {{ table1|safe }}
+        </div>
+        <div class="table-container">
+            <h2>Thailand</h2>
+            {{ table2|safe }}
+        </div>
+    </div>
+</body>
+</html>
+
